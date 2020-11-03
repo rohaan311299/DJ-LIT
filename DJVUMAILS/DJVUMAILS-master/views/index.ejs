@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email Registeration</title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			background-color:#000000;
+		}
+		h2{
+			color: white;
+			font-size: 30px;
+		}
+		h3{
+			color: white;
+			font-size: 20px;
+		}
+		#submit-button{
+			text-align: center;
+		}
+		#email{
+			color:#FFFFFF;
+			font-size: 20px;
+		}
+		#emailblock{
+			text-align: center;
+			font-size: 14px;
+		}
+		html{
+			box-sizing: border-box;
+			line-height: 1.42857143;
+		}
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			position: relative;
+		}
+		#input{
+			border-radius:18px;
+			padding: 15px;
+			font-size: 20px;
+			/*box-shadow: 0 3px 0 0 #D3D3D3;*/
+		}
+		.btn{
+			padding: 15px;
+			font-size: 20px;
+			/*box-shadow: 0 3px 0 0 #D3D3D3;*/
+			}
+		.btn:hover{background-color: #A9A9A9}
+.round{
+  border-radius: 24px;
+}
+	</style>
+	<span id="center">
+	<h2 style="text-align: center;">Subscribe To Our Newsletter</h2>
+	<h3 style="text-align: center;">Subscribe to our email newsletter today to recieve updates on the latest articles published by the writers on DJVU.</h3>
+	<form method="POST" action="/subscribe">
+		<div id="emailblock">
+			<label for="email" id="email"><strong>Email:</strong></label>
+			<input type="email" name="email" id="input" placeholder="Email address" required pattern="^([\w+-.%]+@[\w-.]+\.[A-Za-z]{2,4};?)+$">
+		</div>
+		<div id="submit-button">
+			<br>
+		<button type="submit" name="submit" class="btn btn-primary btn-lg round">Subscribe Now</button>
+		</div>
+	</form>
+	</span>
+</body>
+</html>
